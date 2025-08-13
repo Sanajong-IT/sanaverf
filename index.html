@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>San-A-Verf | Experts in renovatie en schilderwerk</title>
   <meta name="description" content="San-A-Verf biedt professionele renovatie- en schilderdiensten voor woningen, met vakmanschap van hoge kwaliteit en uitmuntende klanttevredenheid.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <!-- Compiled Tailwind CSS -->
   <link href="styles.css" rel="stylesheet">
 </head>
@@ -12,24 +15,24 @@
   <!-- Navigation -->
   <nav class="fixed top-0 left-0 right-0 z-30 bg-white/90 backdrop-blur shadow">
     <div class="container mx-auto flex items-center justify-between p-4">
-      <a href="index.html" class="text-2xl font-bold text-indigo-600">San-A-Verf</a>
+      <a href="index.html" class="text-2xl font-bold text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">San-A-Verf</a>
       <div class="hidden md:flex space-x-8 font-medium">
-        <a href="index.html" class="hover:text-indigo-600">Startpagina</a>
-        <a href="about.html" class="hover:text-indigo-600">Over ons</a>
-        <a href="services.html" class="hover:text-indigo-600">Diensten</a>
-        <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+        <a href="index.html" aria-current="page" class="text-indigo-600 font-semibold hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Startpagina</a>
+        <a href="about.html" class="hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Over ons</a>
+        <a href="services.html" class="hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Diensten</a>
+        <a href="contact.html" class="hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Contact</a>
       </div>
-      <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Toggle menu">
+      <button id="menu-btn" class="md:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500" aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
     <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 p-4 bg-white shadow-lg">
-      <a href="index.html" class="hover:text-indigo-600">Startpagina</a>
-      <a href="about.html" class="hover:text-indigo-600">Over ons</a>
-      <a href="services.html" class="hover:text-indigo-600">Diensten</a>
-      <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+      <a href="index.html" aria-current="page" class="text-indigo-600 font-semibold hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Startpagina</a>
+      <a href="about.html" class="hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Over ons</a>
+      <a href="services.html" class="hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Diensten</a>
+      <a href="contact.html" class="hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Contact</a>
     </div>
   </nav>
 
@@ -40,7 +43,7 @@
     <div class="relative z-10 max-w-2xl text-center px-4">
       <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-md mb-4">Uw experts in renovatie en schilderwerk</h1>
       <p class="text-lg md:text-2xl text-gray-200 mb-8">Transformeer uw huis of bedrijf met onze professionele renovatie- en schilderdiensten.</p>
-      <a href="contact.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors">Vraag een gratis offerte aan</a>
+        <a href="contact.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Vraag een gratis offerte aan</a>
     </div>
   </header>
 
@@ -75,7 +78,7 @@
         </div>
       </div>
       <div class="text-center mt-12">
-        <a href="services.html" class="text-indigo-600 hover:underline font-medium">Lees meer over onze diensten &rarr;</a>
+        <a href="services.html" class="text-indigo-600 hover:underline font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Lees meer over onze diensten &rarr;</a>
       </div>
     </div>
   </section>
@@ -86,7 +89,7 @@
       <div class="md:w-1/2 mb-8 md:mb-0">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Over San-A-Verf</h2>
         <p class="mb-6">Met jarenlange ervaring heeft San-A-Verf een reputatie opgebouwd voor het leveren van renovatie- en schilderdiensten van topkwaliteit met uitzonderlijke klanttevredenheid. Ons vakkundige team combineert ambacht met de nieuwste technieken om uw ruimte te transformeren.</p>
-        <a href="about.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-semibold transition-colors">Lees ons verhaal</a>
+        <a href="about.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Lees ons verhaal</a>
       </div>
       <div class="md:w-1/2 md:pl-12">
         <!-- Decorative image -->
@@ -100,7 +103,7 @@
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-6">Klaar om uw ruimte te transformeren?</h2>
       <p class="mb-8">Neem vandaag nog contact met ons op voor een gratis consult en laat ons uw visie tot leven brengen.</p>
-      <a href="contact.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors">Neem contact op</a>
+        <a href="contact.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Neem contact op</a>
     </div>
   </section>
 
@@ -109,9 +112,9 @@
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
       <p class="text-sm">&copy; <span id="year"></span> San-A-Verf. Alle rechten voorbehouden.</p>
       <div class="mt-4 md:mt-0 space-x-4">
-        <a href="about.html" class="hover:text-white">Over ons</a>
-        <a href="services.html" class="hover:text-white">Diensten</a>
-        <a href="contact.html" class="hover:text-white">Contact</a>
+        <a href="about.html" class="hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Over ons</a>
+        <a href="services.html" class="hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Diensten</a>
+        <a href="contact.html" class="hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Contact</a>
       </div>
     </div>
   </footer>

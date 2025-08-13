@@ -5,30 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | San-A-Verf</title>
   <meta name="description" content="Neem contact op met San-A-Verf om uw renovatie- of schilderproject te bespreken. Bereik ons via telefoon, e-mail of ons handige contactformulier.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 text-gray-800">
   <!-- Navigation -->
   <nav class="fixed top-0 left-0 right-0 z-30 bg-white/90 backdrop-blur shadow">
     <div class="container mx-auto flex items-center justify-between p-4">
-      <a href="index.html" class="text-2xl font-bold text-indigo-600">San-A-Verf</a>
+        <a href="index.html" class="text-2xl font-bold text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">San-A-Verf</a>
       <div class="hidden md:flex space-x-8 font-medium">
-        <a href="index.html" class="hover:text-indigo-600">Startpagina</a>
-        <a href="about.html" class="hover:text-indigo-600">Over ons</a>
-        <a href="services.html" class="hover:text-indigo-600">Diensten</a>
-        <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+        <a href="index.html" class="hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Startpagina</a>
+        <a href="about.html" class="hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Over ons</a>
+        <a href="services.html" class="hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Diensten</a>
+        <a href="contact.html" aria-current="page" class="text-indigo-600 font-semibold hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Contact</a>
       </div>
-      <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Toggle menu">
+      <button id="menu-btn" class="md:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500" aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
     <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 p-4 bg-white shadow-lg">
-      <a href="index.html" class="hover:text-indigo-600">Startpagina</a>
-      <a href="about.html" class="hover:text-indigo-600">Over ons</a>
-      <a href="services.html" class="hover:text-indigo-600">Diensten</a>
-      <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+      <a href="index.html" class="hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Startpagina</a>
+      <a href="about.html" class="hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Over ons</a>
+      <a href="services.html" class="hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Diensten</a>
+      <a href="contact.html" aria-current="page" class="text-indigo-600 font-semibold hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Contact</a>
     </div>
   </nav>
 
@@ -51,8 +54,8 @@
           <h2 class="text-2xl md:text-3xl font-bold mb-4">Contactgegevens</h2>
           <p class="mb-6">Neem contact met ons op via telefoon, e-mail of het contactformulier. Wij streven ernaar alle vragen binnen één werkdag te beantwoorden.</p>
           <ul class="space-y-4">
-            <li><strong>Telefoon:</strong> <a href="tel:+31201234567" class="text-indigo-600 hover:underline">+31 20 123 4567</a></li>
-            <li><strong>E-mail:</strong> <a href="mailto:info@san-a-verf.nl" class="text-indigo-600 hover:underline">info@san-a-verf.nl</a></li>
+              <li><strong>Telefoon:</strong> <a href="tel:+31201234567" class="text-indigo-600 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">+31 20 123 4567</a></li>
+              <li><strong>E-mail:</strong> <a href="mailto:info@san-a-verf.nl" class="text-indigo-600 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">info@san-a-verf.nl</a></li>
             <li><strong>Adres:</strong> Monnickendam, Noord-Holland, Nederland</li>
             <li><strong>Openingstijden:</strong> Maandag – vrijdag, 08:00 – 18:00</li>
           </ul>
@@ -63,22 +66,22 @@
           <form action="#" method="post" class="space-y-4">
             <div>
               <label for="name" class="block font-medium mb-1">Naam</label>
-              <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring focus:border-indigo-500" required>
+                <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500" required>
             </div>
             <div>
               <label for="email" class="block font-medium mb-1">E-mail</label>
-              <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring focus:border-indigo-500" required>
+                <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500" required>
             </div>
             <div>
               <label for="phone" class="block font-medium mb-1">Telefoon</label>
-              <input type="tel" id="phone" name="phone" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring focus:border-indigo-500" required>
+                <input type="tel" id="phone" name="phone" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500" required>
             </div>
             <div>
               <label for="message" class="block font-medium mb-1">Bericht</label>
-              <textarea id="message" name="message" rows="5" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring focus:border-indigo-500" required></textarea>
+                <textarea id="message" name="message" rows="5" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500" required></textarea>
             </div>
             <div>
-              <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-semibold transition-colors w-full md:w-auto">Verzenden</button>
+                <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-semibold transition-colors w-full md:w-auto focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Verzenden</button>
             </div>
           </form>
         </div>
@@ -91,9 +94,9 @@
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
       <p class="text-sm">&copy; <span id="year"></span> San-A-Verf. Alle rechten voorbehouden.</p>
       <div class="mt-4 md:mt-0 space-x-4">
-        <a href="about.html" class="hover:text-white">Over ons</a>
-        <a href="services.html" class="hover:text-white">Diensten</a>
-        <a href="contact.html" class="hover:text-white">Contact</a>
+        <a href="about.html" class="hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Over ons</a>
+        <a href="services.html" class="hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Diensten</a>
+        <a href="contact.html" aria-current="page" class="text-indigo-600 font-semibold hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">Contact</a>
       </div>
     </div>
   </footer>
