@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (menuBtn && mobileMenu) {
     menuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
+      const expanded = !mobileMenu.classList.contains('hidden');
+      menuBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
     });
   }
   // Update the footer year dynamically
