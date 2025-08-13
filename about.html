@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | San-A-Verf</title>
+  <meta name="description" content="Learn about San-A-Verf, a professional renovation and painting company dedicated to craftsmanship and customer satisfaction.">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-30 bg-white/90 backdrop-blur shadow">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="text-2xl font-bold text-indigo-600">San-A-Verf</a>
+      <div class="hidden md:flex space-x-8 font-medium">
+        <a href="index.html" class="hover:text-indigo-600">Home</a>
+        <a href="about.html" class="hover:text-indigo-600">About</a>
+        <a href="services.html" class="hover:text-indigo-600">Services</a>
+        <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+      </div>
+      <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 p-4 bg-white shadow-lg">
+      <a href="index.html" class="hover:text-indigo-600">Home</a>
+      <a href="about.html" class="hover:text-indigo-600">About</a>
+      <a href="services.html" class="hover:text-indigo-600">Services</a>
+      <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <header class="relative flex items-center justify-center h-64 md:h-80 pt-20">
+    <img src="assets/hero.png" alt="Abstract painting background" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="relative z-10 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">About Us</h1>
+      <p class="text-gray-200 text-lg md:text-xl">Discover our story and what drives us.</p>
+    </div>
+  </header>
+
+  <!-- About Content -->
+  <main class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Story</h2>
+        <p class="mb-6">Founded by passionate artisans, San-A-Verf started as a small family business and has grown into a trusted name in house renovation and painting. We believe that every space holds potential and deserves to be treated with care and creativity. Our team is dedicated to enhancing homes and businesses across the Netherlands with superior craftsmanship and a client‑centered approach.</p>
+        <p class="mb-6">Over the years, we have expanded our services to include full renovations, flooring installations, and detailed surface preparation. We stay up to date with the latest techniques and eco‑friendly products to ensure our work not only looks beautiful but also stands the test of time.</p>
+      </div>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div class="bg-white shadow-lg rounded-xl p-6">
+          <h3 class="text-xl font-semibold mb-2">Quality Craftsmanship</h3>
+          <p>We take pride in meticulous workmanship, using the highest quality materials to ensure a flawless finish on every project.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-6">
+          <h3 class="text-xl font-semibold mb-2">Client Satisfaction</h3>
+          <p>Your satisfaction is our top priority. We listen to your needs, communicate transparently, and deliver results that exceed expectations.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-6">
+          <h3 class="text-xl font-semibold mb-2">Innovative Techniques</h3>
+          <p>Our team embraces modern methods and continuous training to deliver efficient, cutting‑edge solutions for your renovation and painting needs.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-6">
+          <h3 class="text-xl font-semibold mb-2">Sustainable Practices</h3>
+          <p>We are committed to using eco‑friendly products and sustainable practices that protect your health and the environment.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm">&copy; <span id="year"></span> San-A-Verf. All rights reserved.</p>
+      <div class="mt-4 md:mt-0 space-x-4">
+        <a href="about.html" class="hover:text-white">About</a>
+        <a href="services.html" class="hover:text-white">Services</a>
+        <a href="contact.html" class="hover:text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

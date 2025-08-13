@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>San-A-Verf | Renovation & Painting Experts</title>
+  <meta name="description" content="San-A-Verf offers professional house renovation and painting services, delivering high-quality craftsmanship and exceptional customer satisfaction.">
+  <!-- Tailwind CSS via CDN for rapid, modern styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-30 bg-white/90 backdrop-blur shadow">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="text-2xl font-bold text-indigo-600">San-A-Verf</a>
+      <div class="hidden md:flex space-x-8 font-medium">
+        <a href="index.html" class="hover:text-indigo-600">Home</a>
+        <a href="about.html" class="hover:text-indigo-600">About</a>
+        <a href="services.html" class="hover:text-indigo-600">Services</a>
+        <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+      </div>
+      <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 p-4 bg-white shadow-lg">
+      <a href="index.html" class="hover:text-indigo-600">Home</a>
+      <a href="about.html" class="hover:text-indigo-600">About</a>
+      <a href="services.html" class="hover:text-indigo-600">Services</a>
+      <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative h-screen flex items-center justify-center pt-20">
+    <img src="assets/hero.png" alt="Abstract painting background" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="relative z-10 max-w-2xl text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-md mb-4">Your Renovation &amp; Painting Experts</h1>
+      <p class="text-lg md:text-2xl text-gray-200 mb-8">Transform your home or business with our professional renovation and painting services.</p>
+      <a href="contact.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors">Get a Free Quote</a>
+    </div>
+  </header>
+
+  <!-- Services Summary -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white shadow-lg rounded-xl p-8 hover:-translate-y-2 transform transition">
+          <h3 class="text-xl font-semibold mb-4">Interior Painting</h3>
+          <p>High-quality interior painting with attention to detail, using premium eco-friendly paints to bring warmth and style to your living spaces.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-8 hover:-translate-y-2 transform transition">
+          <h3 class="text-xl font-semibold mb-4">Exterior Painting</h3>
+          <p>Durable exterior painting that protects and beautifies your home or business, with weather‑resistant finishes for long‑lasting results.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-8 hover:-translate-y-2 transform transition">
+          <h3 class="text-xl font-semibold mb-4">Renovation Projects</h3>
+          <p>Comprehensive renovation services including kitchen and bathroom remodels, carpentry, and structural improvements for a complete makeover.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-8 hover:-translate-y-2 transform transition">
+          <h3 class="text-xl font-semibold mb-4">Flooring &amp; Tiling</h3>
+          <p>Expert installation of hardwood, laminate, and tile flooring to elevate the look and feel of your interior spaces.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-8 hover:-translate-y-2 transform transition">
+          <h3 class="text-xl font-semibold mb-4">Surface Prep &amp; Drywall Repair</h3>
+          <p>Comprehensive surface preparation including sanding, plastering, and drywall repair to ensure a flawless finish every time.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-8 hover:-translate-y-2 transform transition">
+          <h3 class="text-xl font-semibold mb-4">Color Consultation &amp; Design</h3>
+          <p>Professional color consultation and design services to help you choose the perfect palette that reflects your style and enhances your property.</p>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="services.html" class="text-indigo-600 hover:underline font-medium">Learn more about our services &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Call to Action -->
+  <section class="bg-indigo-50 py-16">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">About San-A-Verf</h2>
+        <p class="mb-6">With years of experience, San-A-Verf has built a reputation for delivering top‑quality renovation and painting services along with exceptional customer satisfaction. Our skilled team combines craftsmanship with the latest techniques to transform your space.</p>
+        <a href="about.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-semibold transition-colors">Read Our Story</a>
+      </div>
+      <div class="md:w-1/2 md:pl-12">
+        <!-- Decorative image -->
+        <div class="w-full h-64 bg-cover bg-center rounded-xl shadow-lg" style="background-image: url('assets/hero.png');"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to transform your space?</h2>
+      <p class="mb-8">Contact us today for a free consultation and let us bring your vision to life.</p>
+      <a href="contact.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm">&copy; <span id="year"></span> San-A-Verf. All rights reserved.</p>
+      <div class="mt-4 md:mt-0 space-x-4">
+        <a href="about.html" class="hover:text-white">About</a>
+        <a href="services.html" class="hover:text-white">Services</a>
+        <a href="contact.html" class="hover:text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
